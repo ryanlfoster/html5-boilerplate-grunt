@@ -38,3 +38,6 @@ publish
 
 # Do not save lock file
 Gemfile.lock
+
+# Node stuff
+node_modules
