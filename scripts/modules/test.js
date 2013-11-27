@@ -1,5 +1,7 @@
+'use strict';
+
 function Test(options) {
-    
+
 }
 
 Test.prototype = {

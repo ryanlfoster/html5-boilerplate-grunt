@@ -9,8 +9,10 @@
 }());
 
 },{"./modules/test.js":2}],2:[function(require,module,exports){
+'use strict';
+
 function Test(options) {
-    
+
 }
 
 Test.prototype = {
