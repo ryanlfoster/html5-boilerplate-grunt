@@ -1,0 +1,29 @@
+@include font-face(
+    "Cinzel Decorative-Black",
+
+    font-files(
+        "CinzelDecorative-Black.ttf",
+        "CinzelDecorative-Black.otf",
+        "CinzelDecorative-Black.svg"
+    ), "CinzelDecorative-Black.eot"
+);
+
+@include font-face(
+    "Cinzel Decorative-Bold",
+
+    font-files(
+        "CinzelDecorative-Bold.ttf",
+        "CinzelDecorative-Bold.otf",
+        "CinzelDecorative-Bold.svg"
+    ), "CinzelDecorative-Bold.eot"
+);
+
+@include font-face(
+    "Cinzel Decorative-Regular",
+
+    font-files(
+        "CinzelDecorative-Regular.ttf",
+        "CinzelDecorative-Regular.otf",
+        "CinzelDecorative-Regular.svg"
+    ), "CinzelDecorative-Regular.eot"
+);
