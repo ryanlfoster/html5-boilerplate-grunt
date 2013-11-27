@@ -74,7 +74,7 @@ module.exports = function (grunt) {
             },
 
             js: {
-                files: ['scripts/main.js'],
+                files: ['scripts/**/*.js'],
                 tasks: ['buildjs'],
                 options: {
                     livereload: true
@@ -82,7 +82,7 @@ module.exports = function (grunt) {
             },
 
             all: {
-                files: ['scripts/*.js'],
+                files: ['scripts/**/*.js'],
                 tasks: ['jslint']
             },
 

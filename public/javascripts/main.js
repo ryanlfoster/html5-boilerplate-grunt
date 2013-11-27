@@ -10,7 +10,7 @@
 
 },{"./modules/test.js":2}],2:[function(require,module,exports){
 function Test(options) {
-    this.init();
+    
 }
 
 Test.prototype = {

@@ -1,5 +1,5 @@
 function Test(options) {
-    this.init();
+    
 }
 
 Test.prototype = {
