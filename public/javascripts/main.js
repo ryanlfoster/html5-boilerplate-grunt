@@ -6,7 +6,7 @@
         test = new Test();
 
     test.init();
-})();
+}());
 
 },{"./modules/test.js":2}],2:[function(require,module,exports){
 function Test(options) {
@@ -20,5 +20,6 @@ Test.prototype = {
 };
 
 module.exports = Test;
+
 },{}]},{},[1])
 ;
