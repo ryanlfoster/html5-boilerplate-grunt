@@ -1,0 +1,20 @@
+{
+    "name": "MasterOfGrunt",
+    "version": "0.1.0",
+    "author": "Marcus Lilja",
+    "private": true,
+
+    "devDependencies": {
+        "grunt":                    "*",
+        "grunt-notify":             "*",
+        "grunt-jslint":             "*",
+        "grunt-contrib-cssmin":     "*",
+        "grunt-contrib-sass":       "*",
+        "grunt-contrib-uglify":     "*",
+        "grunt-contrib-watch":      "*",
+        "grunt-contrib-compass":    "*",
+        "grunt-browserify":         "*",
+        "grunt-htmlhint":           "*",
+        "matchdep":                 "*"
+    }
+}

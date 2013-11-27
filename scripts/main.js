@@ -1,5 +1,8 @@
-//= require vendor/jquery
-
 (function () {
-    console.log('Running...');
+    'use strict';
+
+    var Test = require('./modules/test.js'),
+        test = new Test();
+
+    test.init();
 })();
