@@ -1,5 +1,4 @@
 ## Standard HTML5 boilerplate with SASS, Livereload, Grunt and JSLint
-
 Certain requirements needs to be fulfilled in order to run and compile the project.
 
 ### Ruby dependencies
@@ -14,7 +13,6 @@ Certain requirements needs to be fulfilled in order to run and compile the proje
 
 ### Additional dependencies
   * Homebrew - ([https://github.com/mxcl/homebrew](https://github.com/mxcl/homebrew))
-  
 
 ### Installation
 1. `gem install bundle`
