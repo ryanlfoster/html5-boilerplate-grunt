@@ -8,6 +8,6 @@
     test.init();
 
     $(function () {
-        $('body').append('<p>jQuery loaded</p>');
+        $('.container').append($('<p>jQuery loaded</p>').addClass('body'));
     });
 }());
