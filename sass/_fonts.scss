@@ -1,29 +1,19 @@
 @include font-face(
-    "Cinzel Decorative-Black",
+    "Droid Sans Bold",
 
     font-files(
-        "CinzelDecorative-Black.ttf",
-        "CinzelDecorative-Black.otf",
-        "CinzelDecorative-Black.svg"
-    ), "CinzelDecorative-Black.eot"
+        "droidsans-bold.ttf",
+        "droidsans-bold.otf",
+        "droidsans-bold.svg"
+    ), "droidsans-bold.eot"
 );
 
 @include font-face(
-    "Cinzel Decorative-Bold",
+    "Droid Sans Regular",
 
     font-files(
-        "CinzelDecorative-Bold.ttf",
-        "CinzelDecorative-Bold.otf",
-        "CinzelDecorative-Bold.svg"
-    ), "CinzelDecorative-Bold.eot"
-);
-
-@include font-face(
-    "Cinzel Decorative-Regular",
-
-    font-files(
-        "CinzelDecorative-Regular.ttf",
-        "CinzelDecorative-Regular.otf",
-        "CinzelDecorative-Regular.svg"
-    ), "CinzelDecorative-Regular.eot"
+        "droidsans-regular.ttf",
+        "droidsans-regular.otf",
+        "droidsans-regular.svg"
+    ), "droidsans-regular.eot"
 );

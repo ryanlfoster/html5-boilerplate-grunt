@@ -415,21 +415,15 @@ table {
 }
 
 @font-face {
-  font-family: "Cinzel Decorative-Black";
-  src: url('/fonts/CinzelDecorative-Black.eot');
-  src: url('/fonts/CinzelDecorative-Black.eot?#iefix') format('eot'), url('/fonts/CinzelDecorative-Black.ttf') format('truetype'), url('/fonts/CinzelDecorative-Black.otf') format('opentype'), url('/fonts/CinzelDecorative-Black.svg') format('svg');
+  font-family: "Droid Sans Bold";
+  src: url('/fonts/droidsans-bold.eot');
+  src: url('/fonts/droidsans-bold.eot?#iefix') format('eot'), url('/fonts/droidsans-bold.ttf') format('truetype'), url('/fonts/droidsans-bold.otf') format('opentype'), url('/fonts/droidsans-bold.svg') format('svg');
 }
 
 @font-face {
-  font-family: "Cinzel Decorative-Bold";
-  src: url('/fonts/CinzelDecorative-Bold.eot');
-  src: url('/fonts/CinzelDecorative-Bold.eot?#iefix') format('eot'), url('/fonts/CinzelDecorative-Bold.ttf') format('truetype'), url('/fonts/CinzelDecorative-Bold.otf') format('opentype'), url('/fonts/CinzelDecorative-Bold.svg') format('svg');
-}
-
-@font-face {
-  font-family: "Cinzel Decorative-Regular";
-  src: url('/fonts/CinzelDecorative-Regular.eot');
-  src: url('/fonts/CinzelDecorative-Regular.eot?#iefix') format('eot'), url('/fonts/CinzelDecorative-Regular.ttf') format('truetype'), url('/fonts/CinzelDecorative-Regular.otf') format('opentype'), url('/fonts/CinzelDecorative-Regular.svg') format('svg');
+  font-family: "Droid Sans Regular";
+  src: url('/fonts/droidsans-regular.eot');
+  src: url('/fonts/droidsans-regular.eot?#iefix') format('eot'), url('/fonts/droidsans-regular.ttf') format('truetype'), url('/fonts/droidsans-regular.otf') format('opentype'), url('/fonts/droidsans-regular.svg') format('svg');
 }
 
 /* line 1, ../../sass/_base.scss */
@@ -453,10 +447,10 @@ html, body {
 
 /* line 15, ../../sass/_base.scss */
 .title {
-  font-family: "Cinzel Decorative-Bold", sans-serif;
+  font-family: "Droid Sans Bold", sans-serif;
 }
 
 /* line 19, ../../sass/_base.scss */
 .body {
-  font-family: "Cinzel Decorative-Regular", sans-serif;
+  font-family: "Droid Sans Regular", sans-serif;
 }
