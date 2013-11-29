@@ -8,13 +8,12 @@
         "grunt":                    "*",
         "grunt-notify":             "*",
         "grunt-jslint":             "*",
+        "grunt-browserify":         "*",
+        "grunt-htmlhint":           "*",
         "grunt-contrib-cssmin":     "*",
-        "grunt-contrib-sass":       "*",
         "grunt-contrib-uglify":     "*",
         "grunt-contrib-watch":      "*",
         "grunt-contrib-compass":    "*",
-        "grunt-browserify":         "*",
-        "grunt-htmlhint":           "*",
         "matchdep":                 "*"
     }
 }
