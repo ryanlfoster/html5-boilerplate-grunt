@@ -8840,7 +8840,7 @@ if ( typeof window === "object" && typeof window.document === "object" ) {
     test.init();
 
     $(function () {
-        $('.container').append($('<p>jQuery loaded</p>').addClass('body'));
+        $('.container').append($('<p>jQuery loaded!</p>'));
     });
 }());
 

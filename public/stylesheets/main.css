@@ -440,17 +440,24 @@ html, body {
 }
 
 /* line 10, ../../sass/_base.scss */
+body {
+  font: 16px/1.5 "Droid Sans Regular", sans-serif;
+}
+
+/* line 14, ../../sass/_base.scss */
+h1 {
+  font-family: "Droid Sans Bold", sans-serif;
+  font-weight: normal;
+  margin: 0 0 0.3em 0;
+}
+
+/* line 20, ../../sass/_base.scss */
+p {
+  margin: 0 0 1em 0;
+}
+
+/* line 24, ../../sass/_base.scss */
 .container {
   width: 75%;
-  margin: 0 auto;
-}
-
-/* line 15, ../../sass/_base.scss */
-.title {
-  font-family: "Droid Sans Bold", sans-serif;
-}
-
-/* line 19, ../../sass/_base.scss */
-.body {
-  font-family: "Droid Sans Regular", sans-serif;
+  margin: 6em auto;
 }
