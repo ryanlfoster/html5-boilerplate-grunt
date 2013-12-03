@@ -1,13 +1,13 @@
 'use strict';
 
-function Test(options) {
-
+function Test() {
+  this.message = 'Some message.';
 }
 
 Test.prototype = {
-    init: function() {
-        console.log('init');
-    }
+  init: function () {
+    console.log(this.message);
+  }
 };
 
 module.exports = Test;

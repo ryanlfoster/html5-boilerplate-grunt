@@ -8831,30 +8831,30 @@ if ( typeof window === "object" && typeof window.document === "object" ) {
 
 },{}],2:[function(require,module,exports){
 (function () {
-    'use strict';
+  'use strict';
 
-    var $ = require('../bower_components/jquery/jquery.js'),
-        Test = require('./modules/test.js'),
-        test = new Test();
+  var $ = require('../bower_components/jquery/jquery.js'),
+    Test = require('./modules/test.js'),
+    test = new Test();
 
-    test.init();
+  test.init();
 
-    $(function () {
-        $('.container').append($('<p>jQuery loaded!</p>'));
-    });
+  $(function () {
+    $('.container').append($('<p>jQuery loaded!</p>'));
+  });
 }());
 
 },{"../bower_components/jquery/jquery.js":1,"./modules/test.js":3}],3:[function(require,module,exports){
 'use strict';
 
-function Test(options) {
-
+function Test() {
+  this.message = 'Some message.';
 }
 
 Test.prototype = {
-    init: function() {
-        console.log('init');
-    }
+  init: function () {
+    console.log(this.message);
+  }
 };
 
 module.exports = Test;
