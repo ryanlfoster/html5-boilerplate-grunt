@@ -7,11 +7,13 @@ module.exports = function (grunt) {
     pkg: grunt.file.readJSON('package.json'),
 
     jslint: {
-      code: {
+      all: {
         src: ['Gruntfile.js', 'scripts/*.js', 'scripts/**/*.js'],
+
         options: {
           errorsOnly: true
         },
+
         directives: {
           node: true,
           todo: true,
@@ -34,7 +36,14 @@ module.exports = function (grunt) {
     },
 
     compass: {
-      dist: {
+      watch: {
+        options: {
+          config: 'compass-config.rb',
+          watch: true
+        }
+      },
+
+      compile: {
         options: {
           config: 'compass-config.rb'
         }
@@ -49,34 +58,45 @@ module.exports = function (grunt) {
     },
 
     browserify: {
-      js: {
+      build: {
         src: 'scripts/main.js',
         dest: 'public/javascripts/main.js'
       }
     },
 
-    watch: {
-      scripts: {
-        files: ['Gruntfile.js', 'scripts/**/*.js', 'scripts/*.js'],
-        tasks: ['buildjs', 'test'],
-        options: {
-          livereload: true
-        }
+    concurrent: {
+      options: {
+        logConcurrentOutput: true
       },
 
-      styles: {
-        files: ['sass/**/*.scss', 'sass/*.scss'],
-        tasks: ['buildcss'],
-        options: {
-          livereload: true
-        }
+      dev: {
+        tasks: ['compass:watch', 'watch:browserify', 'watch:uglify', 'watch:jslint', 'watch:cssmin']
+      }
+    },
+
+    watch: {
+      browserify: {
+        files: ['scripts/**/*.js', 'scripts/*.js'],
+        tasks: ['browserify']
+      },
+
+      uglify: {
+        files: ['public/javascripts/main.js'],
+        tasks: ['uglify']
+      },
+
+      jslint: {
+        files: ['Gruntfile.js', 'scripts/**/*.js', 'scripts/*.js'],
+        tasks: ['jslint']
+      },
+
+      cssmin: {
+        files: ['public/stylesheets/main.css'],
+        tasks: ['cssmin']
       }
     }
   });
 
-  grunt.registerTask('default', ['buildcss', 'buildjs']);
-
-  grunt.registerTask('test', ['jslint']);
-  grunt.registerTask('buildcss', ['compass', 'cssmin']);
-  grunt.registerTask('buildjs', ['browserify', 'uglify', 'test']);
+  grunt.registerTask('default', ['compass:compile', 'browserify', 'uglify', 'jslint', 'cssmin']);
+  grunt.registerTask('dev', ['concurrent:dev']);
 };

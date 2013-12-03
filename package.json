@@ -9,6 +9,7 @@
     "grunt-notify":             "*",
     "grunt-jslint":             "*",
     "grunt-browserify":         "*",
+    "grunt-concurrent":         "*",
     "grunt-contrib-cssmin":     "*",
     "grunt-contrib-uglify":     "*",
     "grunt-contrib-watch":      "*",
