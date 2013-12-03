@@ -1,22 +1,22 @@
 {
-    "name": "html5-boilerplate-grunt",
-    "version": "0.1.0",
-    "homepage": "https://github.com/marcuslilja/html5-boilerplate-grunt",
-    "license": "MIT",
-    "private": true,
-    "authors": [
-        "Marcus Lilja <marcus.lilja@gmail.com>"
-    ],
+  "name": "html5-boilerplate-grunt",
+  "version": "0.1.0",
+  "homepage": "https://github.com/marcuslilja/html5-boilerplate-grunt",
+  "license": "MIT",
+  "private": true,
+  "authors": [
+    "Marcus Lilja <marcus.lilja@gmail.com>"
+  ],
 
-    "devDependencies": {
-        "jquery": "*"
-    },
+  "devDependencies": {
+    "jquery": "*"
+  },
 
-    "ignore": [
-        "**/.*",
-        "node_modules",
-        "bower_components",
-        "test",
-        "tests"
-    ]
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }
