@@ -18,6 +18,9 @@ Certain requirements needs to be fulfilled in order to run and compile the proje
 1. `gem install bundle`
 2. `bundle install`
 3. `npm install`
+4. `npm install -g grunt-cli`
+5. `npm install -g bower`
+6. `bower install`
 
 ### Running project
-Run project with `grunt` or `grunt watch`.
+Compile project with `grunt` or watch for changes with `grunt dev`.
