@@ -2,7 +2,8 @@
   @include box-sizing(border-box);
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
@@ -14,11 +15,11 @@ body {
 h1 {
   font-family: "Droid Sans Bold", sans-serif;
   font-weight: normal;
-  margin: 0 0 0.3em 0;
+  margin: 0 0 0.3em;
 }
 
 p {
-  margin: 0 0 1em 0;
+  margin: 0 0 1em;
 }
 
 .container {
