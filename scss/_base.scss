@@ -1,0 +1,27 @@
+* {
+  @include box-sizing(border-box);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 16px/1.5 "Droid Sans Regular", sans-serif;
+}
+
+h1 {
+  font-family: "Droid Sans Bold", sans-serif;
+  font-weight: normal;
+  margin: 0 0 0.3em 0;
+}
+
+p {
+  margin: 0 0 1em 0;
+}
+
+.container {
+  margin: 6em auto;
+  width: 75%;
+}

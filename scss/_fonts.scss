@@ -1,0 +1,19 @@
+@include font-face(
+  "Droid Sans Bold",
+
+  font-files(
+    "droidsans-bold.ttf",
+    "droidsans-bold.otf",
+    "droidsans-bold.svg"
+  ), "droidsans-bold.eot"
+);
+
+@include font-face(
+  "Droid Sans Regular",
+
+  font-files(
+    "droidsans-regular.ttf",
+    "droidsans-regular.otf",
+    "droidsans-regular.svg"
+  ), "droidsans-regular.eot"
+);
