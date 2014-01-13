@@ -103,5 +103,6 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask('default', ['compass:compile', 'browserify', 'uglify', 'jslint', 'cssmin']);
+  grunt.registerTask('prod', ['concurrent:prod']);
   grunt.registerTask('dev', ['concurrent:dev']);
 };
