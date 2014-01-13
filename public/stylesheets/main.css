@@ -417,12 +417,12 @@ table {
 @font-face {
   font-family: "Droid Sans Bold";
   src: url('/fonts/droidsans-bold.eot?1387982947');
-  src: url('/fonts/droidsans-bold.eot?#iefix') format('embedded-opentype'), url('/fonts/droidsans-bold.ttf?1387982947') format('truetype'), url('/fonts/droidsans-bold.otf') format('opentype'), url('/fonts/droidsans-bold.svg?1387982947') format('svg');
+  src: url('/fonts/droidsans-bold.eot?#iefix') format('embedded-opentype'), url('/fonts/droidsans-bold.ttf?1387982947') format('truetype'), url('/fonts/droidsans-bold.woff?1387982947') format('woff'), url('/fonts/droidsans-bold.svg?1387982947') format('svg');
 }
 @font-face {
   font-family: "Droid Sans Regular";
   src: url('/fonts/droidsans-regular.eot?1387982947');
-  src: url('/fonts/droidsans-regular.eot?#iefix') format('embedded-opentype'), url('/fonts/droidsans-regular.ttf?1387982947') format('truetype'), url('/fonts/droidsans-regular.otf') format('opentype'), url('/fonts/droidsans-regular.svg?1387982947') format('svg');
+  src: url('/fonts/droidsans-regular.eot?#iefix') format('embedded-opentype'), url('/fonts/droidsans-regular.ttf?1387982947') format('truetype'), url('/fonts/droidsans-regular.woff?1387982947') format('woff'), url('/fonts/droidsans-regular.svg?1387982947') format('svg');
 }
 /* line 1, ../../scss/_base.scss */
 * {
@@ -459,4 +459,9 @@ p {
 .container {
   margin: 6em auto;
   width: 75%;
+}
+
+/* line 13, ../../scss/main.scss */
+body {
+  background-color: red;
 }
