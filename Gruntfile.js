@@ -66,7 +66,8 @@ module.exports = function (grunt) {
 
     concurrent: {
       options: {
-        logConcurrentOutput: true
+        logConcurrentOutput: true,
+        limit: 10
       },
 
       dev: {
