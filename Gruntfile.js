@@ -70,8 +70,12 @@ module.exports = function (grunt) {
         limit: 10
       },
 
-      dev: {
+      prod: {
         tasks: ['compass:watch', 'watch:browserify', 'watch:uglify', 'watch:jslint', 'watch:cssmin']
+      },
+
+      dev: {
+        tasks: ['compass:watch', 'watch:browserify', 'watch:jslint']
       }
     },
 
