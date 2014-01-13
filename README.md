@@ -23,4 +23,4 @@ Certain requirements needs to be fulfilled in order to run and compile the proje
 6. `bower install`
 
 ### Running project
-Compile project with `grunt` or watch for changes with `grunt dev`.
+Compile project with `grunt` or watch for changes with `grunt dev` or `grunt prod`.
