@@ -460,8 +460,3 @@ p {
   margin: 6em auto;
   width: 75%;
 }
-
-/* line 13, ../../scss/main.scss */
-body {
-  background-color: red;
-}
