@@ -19,3 +19,8 @@ relative_assets = false
 
 # Line comments can be helpfull when developing the project.
 line_comments = true
+
+# disable asset cache buster
+asset_cache_buster do |http_path, real_path|
+  nil
+end
