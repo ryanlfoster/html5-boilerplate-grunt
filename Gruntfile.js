@@ -71,38 +71,50 @@ module.exports = function (grunt) {
       },
 
       prod: {
-        tasks: ['compass:watch', 'watch:browserify', 'watch:uglify', 'watch:jslint', 'watch:cssmin']
+        tasks: ['compass:watch', 'watch:cssmin', 'watch:jslint', 'watch:browserify', 'watch:uglify']
       },
 
       dev: {
-        tasks: ['compass:watch', 'watch:browserify', 'watch:jslint']
+        tasks: ['compass:watch', 'watch:jslint', 'watch:browserify']
       }
     },
 
     watch: {
       browserify: {
         files: ['scripts/**/*.js', 'scripts/*.js'],
-        tasks: ['browserify']
+        tasks: ['browserify'],
+        options: {
+          spawn: false
+        }
       },
 
       uglify: {
         files: ['public/javascripts/main.js'],
-        tasks: ['uglify']
+        tasks: ['uglify'],
+        options: {
+          spawn: false
+        }
       },
 
       jslint: {
         files: ['Gruntfile.js', 'scripts/**/*.js', 'scripts/*.js'],
-        tasks: ['jslint']
+        tasks: ['jslint'],
+        options: {
+          spawn: false
+        }
       },
 
       cssmin: {
         files: ['public/stylesheets/main.css'],
-        tasks: ['cssmin']
+        tasks: ['cssmin'],
+        options: {
+          spawn: false
+        }
       }
     }
   });
 
-  grunt.registerTask('default', ['compass:compile', 'browserify', 'uglify', 'jslint', 'cssmin']);
+  grunt.registerTask('default', ['jslint', 'compass:compile', 'cssmin', 'browserify', 'uglify']);
   grunt.registerTask('prod', ['concurrent:prod']);
   grunt.registerTask('dev', ['concurrent:dev']);
 };
