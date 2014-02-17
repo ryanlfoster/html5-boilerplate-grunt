@@ -45,17 +45,14 @@ module.exports = function (grunt) {
       }
     },
 
-    compass: {
-      watch: {
+    sass: {
+      build: {
         options: {
-          config: 'compass-config.rb',
-          watch: true
-        }
-      },
+          style: 'expanded'
+        },
 
-      compile: {
-        options: {
-          config: 'compass-config.rb'
+        files: {
+          'public/stylesheets/main.css': 'assets/stylesheets/main.scss'
         }
       }
     },
@@ -92,7 +89,7 @@ module.exports = function (grunt) {
 
       dev: {
         tasks: [
-          'compass:watch',
+          'watch:sass',
           'watch:browserify',
           'watch:jslint'
         ]
@@ -124,6 +121,18 @@ module.exports = function (grunt) {
         tasks: ['jslint']
       },
 
+      sass: {
+        options: {
+          livereload: true
+        },
+
+        files: [
+          'assets/stylesheets/**/*.scss',
+          'assets/stylesheets/*.scss'
+        ],
+        tasks: ['sass']
+      },
+
       cssmin: {
         files: ['public/stylesheets/main.css'],
         tasks: ['cssmin']
@@ -131,7 +140,7 @@ module.exports = function (grunt) {
     }
   });
 
-  grunt.registerTask('default', ['compass:compile', 'browserify', 'uglify', 'jslint', 'cssmin']);
+  grunt.registerTask('default', ['sass', 'cssmin', 'browserify', 'uglify', 'jslint']);
   grunt.registerTask('prod', ['concurrent:prod']);
   grunt.registerTask('dev', ['concurrent:dev']);
 };

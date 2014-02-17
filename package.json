@@ -6,6 +6,7 @@
 
   "devDependencies": {
     "grunt":                    "*",
+    "grunt-sass":               "*",
     "grunt-notify":             "*",
     "grunt-jslint":             "*",
     "grunt-browserify":         "*",
@@ -13,7 +14,6 @@
     "grunt-contrib-cssmin":     "*",
     "grunt-contrib-uglify":     "*",
     "grunt-contrib-watch":      "*",
-    "grunt-contrib-compass":    "*",
     "matchdep":                 "*"
   }
 }
