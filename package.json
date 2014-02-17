@@ -6,11 +6,11 @@
 
   "devDependencies": {
     "grunt":                    "*",
-    "grunt-sass":               "*",
     "grunt-notify":             "*",
     "grunt-jslint":             "*",
     "grunt-browserify":         "*",
     "grunt-concurrent":         "*",
+    "grunt-contrib-sass":       "*",
     "grunt-contrib-cssmin":     "*",
     "grunt-contrib-uglify":     "*",
     "grunt-contrib-watch":      "*",

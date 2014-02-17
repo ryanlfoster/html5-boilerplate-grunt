@@ -47,6 +47,12 @@ module.exports = function (grunt) {
 
     sass: {
       build: {
+        options: {
+          style: 'expanded',
+          lineNumbers: true,
+          quiet: true
+        },
+
         files: {
           'public/stylesheets/main.css': 'assets/stylesheets/main.scss'
         }
