@@ -2,14 +2,14 @@
 Certain requirements needs to be fulfilled in order to run and compile the project.
 
 ### Ruby dependencies
-  * Sass - ([http://sass-lang.com/](http://sass-lang.com/))
-  * Compass - ([http://compass-style.org/](http://compass-style.org/))
   * RVM - ([https://rvm.io/](https://rvm.io/))
+  * Sass - ([http://sass-lang.com/](http://sass-lang.com/))
 
 ### NPM dependencies
   * Node - ([http://nodejs.org/](http://nodejs.org/))
   * NPM - ([https://npmjs.org/](https://npmjs.org/))
   * Grunt JS - ([http://gruntjs.com/](http://gruntjs.com/))
+  * Bower - ([http://bower.io/](http://bower.io/))
 
 ### Additional dependencies
   * Homebrew - ([https://github.com/mxcl/homebrew](https://github.com/mxcl/homebrew))
@@ -23,4 +23,4 @@ Certain requirements needs to be fulfilled in order to run and compile the proje
 6. `bower install`
 
 ### Running project
-Compile project with `grunt` or watch for changes with `grunt dev` or `grunt prod`.
+Compile project with `grunt` or watch for changes with `grunt watch`.

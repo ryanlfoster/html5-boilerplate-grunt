@@ -47,10 +47,6 @@ module.exports = function (grunt) {
 
     sass: {
       build: {
-        options: {
-          style: 'expanded'
-        },
-
         files: {
           'public/stylesheets/main.css': 'assets/stylesheets/main.scss'
         }
@@ -71,33 +67,12 @@ module.exports = function (grunt) {
       }
     },
 
-    concurrent: {
-      options: {
-        logConcurrentOutput: true,
-        limit: 10
-      },
-
-      prod: {
-        tasks: [
-          'compass:watch',
-          'watch:browserify',
-          'watch:uglify',
-          'watch:jslint',
-          'watch:cssmin'
-        ]
-      },
-
-      dev: {
-        tasks: [
-          'watch:sass',
-          'watch:browserify',
-          'watch:jslint'
-        ]
-      }
-    },
-
     watch: {
       browserify: {
+        options: {
+          spawn: false
+        },
+
         files: [
           'assets/javascripts/**/*.js',
           'assets/javascripts/*.js'
@@ -107,11 +82,19 @@ module.exports = function (grunt) {
       },
 
       uglify: {
+        options: {
+          spawn: false
+        },
+
         files: ['public/javascripts/main.js'],
         tasks: ['uglify']
       },
 
       jslint: {
+        options: {
+          spawn: false
+        },
+
         files: [
           'Gruntfile.js',
           'assets/javascripts/**/*.js',
@@ -123,17 +106,23 @@ module.exports = function (grunt) {
 
       sass: {
         options: {
-          livereload: true
+          livereload: true,
+          spawn: false
         },
 
         files: [
           'assets/stylesheets/**/*.scss',
           'assets/stylesheets/*.scss'
         ],
+
         tasks: ['sass']
       },
 
       cssmin: {
+        options: {
+          spawn: false
+        },
+
         files: ['public/stylesheets/main.css'],
         tasks: ['cssmin']
       }
