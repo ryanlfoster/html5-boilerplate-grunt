@@ -1,10 +1,9 @@
-## Standard HTML5 boilerplate with SASS, Livereload, Grunt and JSLint
+## Standard HTML5 boilerplate with libsass, bourbon, grunt, jslint and browserify
 Certain requirements needs to be fulfilled in order to run and compile the project.
 
 ### Ruby dependencies
   * RVM - ([https://rvm.io/](https://rvm.io/))
   * Sass - ([http://sass-lang.com/](http://sass-lang.com/))
-  * Bourbon ([http://bourbon.io/](http://bourbon.io/))
 
 ### NPM dependencies
   * Node - ([http://nodejs.org/](http://nodejs.org/))
@@ -13,6 +12,7 @@ Certain requirements needs to be fulfilled in order to run and compile the proje
   * Bower - ([http://bower.io/](http://bower.io/))
 
 ### Additional dependencies
+  * Bourbon ([http://bourbon.io/](http://bourbon.io/))
   * Homebrew - ([https://github.com/mxcl/homebrew](https://github.com/mxcl/homebrew))
 
 ### Installation
