@@ -104,7 +104,7 @@ module.exports = function (grunt) {
         tasks: ['jslint']
       },
 
-      sass: {
+      stylesheets: {
         options: {
           spawn: false
         },
@@ -114,21 +114,10 @@ module.exports = function (grunt) {
           'assets/stylesheets/*.scss'
         ],
 
-        tasks: ['sass']
-      },
-
-      cssmin: {
-        options: {
-          spawn: false
-        },
-
-        files: ['public/stylesheets/main.css'],
-        tasks: ['cssmin']
+        tasks: ['sass', 'cssmin']
       }
     }
   });
 
   grunt.registerTask('default', ['sass', 'cssmin', 'browserify', 'uglify', 'jslint']);
-  grunt.registerTask('prod', ['concurrent:prod']);
-  grunt.registerTask('dev', ['concurrent:dev']);
 };
