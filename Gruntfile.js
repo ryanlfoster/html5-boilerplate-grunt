@@ -21,6 +21,7 @@ module.exports = function (grunt) {
         directives: {
           node: true,
           todo: true,
+          browser: true,
           indent: 2
         }
       }
