@@ -106,7 +106,6 @@ module.exports = function (grunt) {
 
       sass: {
         options: {
-          livereload: true,
           spawn: false
         },
 
