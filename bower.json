@@ -9,7 +9,7 @@
   ],
 
   "devDependencies": {
-    "jquery": "*"
+    "jquery": "2.1.*"
   },
 
   "ignore": [
