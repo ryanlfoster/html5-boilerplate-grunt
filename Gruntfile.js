@@ -14,6 +14,11 @@ module.exports = function (grunt) {
           'assets/javascripts/**/*.js'
         ],
 
+        exclude: [
+          'assets/javascripts/vendor/**/*.js',
+          'assets/javascripts/vendor/*.js'
+        ],
+
         options: {
           errorsOnly: true
         },
