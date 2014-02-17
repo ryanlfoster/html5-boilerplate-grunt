@@ -26,3 +26,16 @@ p {
   margin: 6em auto;
   width: 75%;
 }
+
+// BEM-syntax example for Sass 3.3
+.block {
+  @at-root {
+    .block__element {
+      display: block;
+    }
+
+    .block--modifier {
+      background-color: red;
+    }
+  }
+}
