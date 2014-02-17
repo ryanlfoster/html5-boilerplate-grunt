@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  var $ = require('../bower_components/jquery/jquery.js'),
+  var $ = require('../../bower_components/jquery/dist/jquery.js'),
     Test = require('./modules/test.js'),
     test = new Test();
 

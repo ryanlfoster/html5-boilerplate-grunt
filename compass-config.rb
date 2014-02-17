@@ -1,6 +1,6 @@
 # Path settings
 http_path = "/"
-sass_dir = "scss"
+sass_dir = "assets/stylesheets"
 
 css_dir = "public/stylesheets"
 http_stylesheets_path = "stylesheets"

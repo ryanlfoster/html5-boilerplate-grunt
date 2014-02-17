@@ -8,7 +8,11 @@ module.exports = function (grunt) {
 
     jslint: {
       all: {
-        src: ['Gruntfile.js', 'scripts/*.js', 'scripts/**/*.js'],
+        src: [
+          'Gruntfile.js',
+          'assets/javascripts/*.js',
+          'assets/javascripts/**/*.js'
+        ],
 
         options: {
           errorsOnly: true
@@ -59,7 +63,7 @@ module.exports = function (grunt) {
 
     browserify: {
       build: {
-        src: 'scripts/main.js',
+        src: 'assets/javascripts/main.js',
         dest: 'public/javascripts/main.js'
       }
     },
@@ -71,17 +75,31 @@ module.exports = function (grunt) {
       },
 
       prod: {
-        tasks: ['compass:watch', 'watch:browserify', 'watch:uglify', 'watch:jslint', 'watch:cssmin']
+        tasks: [
+          'compass:watch',
+          'watch:browserify',
+          'watch:uglify',
+          'watch:jslint',
+          'watch:cssmin'
+        ]
       },
 
       dev: {
-        tasks: ['compass:watch', 'watch:browserify', 'watch:jslint']
+        tasks: [
+          'compass:watch',
+          'watch:browserify',
+          'watch:jslint'
+        ]
       }
     },
 
     watch: {
       browserify: {
-        files: ['scripts/**/*.js', 'scripts/*.js'],
+        files: [
+          'assets/javascripts/**/*.js',
+          'assets/javascripts/*.js'
+        ],
+
         tasks: ['browserify']
       },
 
@@ -91,7 +109,12 @@ module.exports = function (grunt) {
       },
 
       jslint: {
-        files: ['Gruntfile.js', 'scripts/**/*.js', 'scripts/*.js'],
+        files: [
+          'Gruntfile.js',
+          'assets/javascripts/**/*.js',
+          'assets/javascripts/*.js'
+        ],
+
         tasks: ['jslint']
       },
 
