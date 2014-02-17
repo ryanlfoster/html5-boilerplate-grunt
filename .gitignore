@@ -39,9 +39,10 @@ publish
 # Do not save lock file
 Gemfile.lock
 
-# Node stuff
+# Libraries
 node_modules
 bower_components
+bourbon
 
 # Generated files
 public/stylesheets/main.min.css
