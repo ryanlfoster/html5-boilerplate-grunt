@@ -9134,11 +9134,5 @@ if ( typeof noGlobal === strundefined ) {
 	window.jQuery = window.$ = jQuery;
 }
 
-
-
-
-return jQuery;
-
-}));
-
-},{}]},{},[1])
+},{}]},{},[2])
+;
