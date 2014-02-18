@@ -6,6 +6,27 @@ module.exports = function (grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
+    sass: {
+      build: {
+        options: {
+          style: 'expanded',
+          lineNumbers: true,
+          quiet: true
+        },
+
+        files: {
+          'public/stylesheets/main.css': 'assets/stylesheets/main.scss'
+        }
+      }
+    },
+
+    cssmin: {
+      build: {
+        src: 'public/stylesheets/main.css',
+        dest: 'public/stylesheets/main.min.css'
+      }
+    },
+
     jslint: {
       all: {
         src: [
@@ -32,48 +53,65 @@ module.exports = function (grunt) {
       }
     },
 
+    browserify: {
+      build: {
+        src: 'assets/javascripts/main.js',
+        dest: 'public/javascripts/main.js',
+
+        options: {
+          shim: {
+            jQuery: {
+              path: 'bower_components/jquery/dist/jquery.js',
+              exports: '$'
+            }
+          },
+          aliasMappings: [
+            {
+              cwd: 'assets/javascripts/modules',
+              src: ['*.js', '**/*.js'],
+              dest: 'modules'
+            }
+          ]
+        }
+      }
+    },
+
     uglify: {
       build: {
-        options: {
-          sourceMap: 'public/javascripts/main.min.map',
-          sourceMappingURL: 'main.min.map'
-        },
-
         files: {
           'public/javascripts/main.min.js': ['public/javascripts/main.js']
         }
       }
     },
 
-    sass: {
-      build: {
+    watch: {
+      stylesheets: {
         options: {
-          style: 'expanded',
-          lineNumbers: true,
-          quiet: true
+          spawn: false
         },
 
-        files: {
-          'public/stylesheets/main.css': 'assets/stylesheets/main.scss'
-        }
-      }
-    },
+        files: [
+          'assets/stylesheets/**/*.scss',
+          'assets/stylesheets/*.scss'
+        ],
 
-    cssmin: {
-      build: {
-        src: 'public/stylesheets/main.css',
-        dest: 'public/stylesheets/main.min.css'
-      }
-    },
+        tasks: ['sass', 'cssmin']
+      },
 
-    browserify: {
-      build: {
-        src: 'assets/javascripts/main.js',
-        dest: 'public/javascripts/main.js'
-      }
-    },
+      jslint: {
+        options: {
+          spawn: false
+        },
 
-    watch: {
+        files: [
+          'Gruntfile.js',
+          'assets/javascripts/**/*.js',
+          'assets/javascripts/*.js'
+        ],
+
+        tasks: ['jslint']
+      },
+
       browserify: {
         options: {
           spawn: false
@@ -94,36 +132,9 @@ module.exports = function (grunt) {
 
         files: ['public/javascripts/main.js'],
         tasks: ['uglify']
-      },
-
-      jslint: {
-        options: {
-          spawn: false
-        },
-
-        files: [
-          'Gruntfile.js',
-          'assets/javascripts/**/*.js',
-          'assets/javascripts/*.js'
-        ],
-
-        tasks: ['jslint']
-      },
-
-      stylesheets: {
-        options: {
-          spawn: false
-        },
-
-        files: [
-          'assets/stylesheets/**/*.scss',
-          'assets/stylesheets/*.scss'
-        ],
-
-        tasks: ['sass', 'cssmin']
       }
     }
   });
 
-  grunt.registerTask('default', ['sass', 'cssmin', 'browserify', 'uglify', 'jslint']);
+  grunt.registerTask('default', ['sass', 'cssmin', 'jslint', 'browserify', 'uglify']);
 };
