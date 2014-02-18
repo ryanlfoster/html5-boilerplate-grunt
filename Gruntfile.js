@@ -53,12 +53,7 @@ module.exports = function (grunt) {
 
         options: {
           debug: true,
-          shim: {
-            jQuery: {
-              path: 'bower_components/jquery/dist/jquery.js',
-              exports: '$'
-            }
-          },
+          alias: 'bower_components/jquery/dist/jquery.js:jquery',
           aliasMappings: [
             {
               cwd: 'assets/javascripts/modules',
