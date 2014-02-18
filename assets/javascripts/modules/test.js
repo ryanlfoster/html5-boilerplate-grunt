@@ -1,13 +1,17 @@
-'use strict';
+(function () {
+  'use strict';
 
-function Test() {
-  this.message = 'Some message.';
-}
+  var console = require('console-browserify');
 
-Test.prototype = {
-  init: function () {
-    console.log(this.message);
+  function Test() {
+    this.message = 'Some message.';
   }
-};
 
-module.exports = Test;
+  Test.prototype = {
+    init: function () {
+      console.log(this.message);
+    }
+  };
+
+  module.exports = Test;
+}());
