@@ -9,12 +9,13 @@
     "grunt-notify":             "*",
     "grunt-jslint":             "*",
     "grunt-browserify":         "*",
-    "console-browserify":       "*",
+    "grunt-exorcise":           "*",
     "grunt-concurrent":         "*",
     "grunt-contrib-sass":       "*",
     "grunt-contrib-cssmin":     "*",
     "grunt-contrib-uglify":     "*",
     "grunt-contrib-watch":      "*",
+    "console-browserify":       "*",
     "matchdep":                 "*"
   }
 }

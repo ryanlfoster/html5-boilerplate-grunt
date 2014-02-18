@@ -59,6 +59,7 @@ module.exports = function (grunt) {
         dest: 'public/javascripts/main.js',
 
         options: {
+          debug: true,
           shim: {
             jQuery: {
               path: 'bower_components/jquery/dist/jquery.js',
@@ -76,8 +77,21 @@ module.exports = function (grunt) {
       }
     },
 
+    exorcise: {
+      build: {
+        files: {
+          'public/javascripts/main.map': ['public/javascripts/main.js']
+        }
+      }
+    },
+
     uglify: {
       build: {
+        options: {
+          sourceMap: true,
+          sourceMapIn: 'public/javascripts/main.map'
+        },
+
         files: {
           'public/javascripts/main.min.js': ['public/javascripts/main.js']
         }
@@ -122,7 +136,7 @@ module.exports = function (grunt) {
           'assets/javascripts/*.js'
         ],
 
-        tasks: ['browserify']
+        tasks: ['browserify', 'exorcise']
       },
 
       uglify: {
@@ -136,5 +150,5 @@ module.exports = function (grunt) {
     }
   });
 
-  grunt.registerTask('default', ['sass', 'cssmin', 'jslint', 'browserify', 'uglify']);
+  grunt.registerTask('default', ['sass', 'cssmin', 'jslint', 'browserify', 'exorcise', 'uglify']);
 };
