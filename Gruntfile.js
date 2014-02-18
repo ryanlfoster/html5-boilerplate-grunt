@@ -9,21 +9,14 @@ module.exports = function (grunt) {
     sass: {
       build: {
         options: {
-          style: 'expanded',
-          lineNumbers: true,
-          quiet: true
+          style: 'compressed',
+          quiet: true,
+          sourcemap: true
         },
 
         files: {
-          'public/stylesheets/main.css': 'assets/stylesheets/main.scss'
+          'public/stylesheets/main.min.css': 'assets/stylesheets/main.scss'
         }
-      }
-    },
-
-    cssmin: {
-      build: {
-        src: 'public/stylesheets/main.css',
-        dest: 'public/stylesheets/main.min.css'
       }
     },
 
@@ -99,7 +92,7 @@ module.exports = function (grunt) {
     },
 
     watch: {
-      stylesheets: {
+      sass: {
         options: {
           spawn: false
         },
@@ -109,7 +102,7 @@ module.exports = function (grunt) {
           'assets/stylesheets/*.scss'
         ],
 
-        tasks: ['sass', 'cssmin']
+        tasks: ['sass']
       },
 
       jslint: {
@@ -150,5 +143,5 @@ module.exports = function (grunt) {
     }
   });
 
-  grunt.registerTask('default', ['sass', 'cssmin', 'jslint', 'browserify', 'exorcise', 'uglify']);
+  grunt.registerTask('default', ['sass', 'jslint', 'browserify', 'exorcise', 'uglify']);
 };

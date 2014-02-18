@@ -46,7 +46,7 @@ bourbon
 
 # Generated files
 public/stylesheets/main.min.css
-public/stylesheets/main.css
+public/stylesheets/main.min.css.map
 public/javascripts/main.min.map
 public/javascripts/main.min.js
 public/javascripts/main.map
