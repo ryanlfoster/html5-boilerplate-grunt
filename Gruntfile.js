@@ -54,7 +54,9 @@ module.exports = function (grunt) {
 
         options: {
           debug: true,
-          alias: 'bower_components/jquery/dist/jquery.js:jquery',
+          alias: [
+            'bower_components/jquery/dist/jquery.js:jquery'
+          ],
           aliasMappings: [
             {
               cwd: 'assets/javascripts/modules',
