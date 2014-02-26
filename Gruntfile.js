@@ -213,7 +213,7 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask('default', [
-    'sass', 'copy:images', 'imagemin', 'copy:files',
+    'sass', 'copy:images', 'imagemin', 'copy:fonts',
     'jslint', 'browserify', 'exorcise', 'uglify'
   ]);
 };
