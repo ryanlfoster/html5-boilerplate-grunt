@@ -98,6 +98,16 @@ module.exports = function (grunt) {
         ],
         dest: 'public/images/',
         filter: 'isFile'
+      },
+
+      fonts: {
+        expand: true,
+        cwd: 'assets/fonts/',
+        src: [
+          '**'
+        ],
+        dest: 'public/fonts/',
+        filter: 'isFile'
       }
     },
 
@@ -149,6 +159,21 @@ module.exports = function (grunt) {
         ]
       },
 
+      fonts: {
+        options: {
+          spawn: false
+        },
+
+        files: [
+          'assets/fonts/**/*',
+          'assets/fonts/*'
+        ],
+
+        tasks: [
+          'copy:fonts'
+        ]
+      },
+
       jslint: {
         options: {
           spawn: false
@@ -187,5 +212,8 @@ module.exports = function (grunt) {
     }
   });
 
-  grunt.registerTask('default', ['sass', 'copy:images', 'imagemin', 'jslint', 'browserify', 'exorcise', 'uglify']);
+  grunt.registerTask('default', [
+    'sass', 'copy:images', 'imagemin', 'copy:files',
+    'jslint', 'browserify', 'exorcise', 'uglify'
+  ]);
 };
