@@ -20,22 +20,6 @@ Thumbs.db
 *.esproj
 nbproject
 
-# Dreamweaver added files
-_notes
-dwsync.xml
-
-# Komodo
-*.komodoproject
-.komodotools
-
-# Folders to ignore
-.hg
-.svn
-.CVS
-intermediate
-publish
-.idea
-
 # Do not save lock file
 Gemfile.lock
 
