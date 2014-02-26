@@ -1,6 +1,6 @@
 {
-  "name": "GruntTest",
-  "version": "0.1.0",
+  "name": "html5-boilerplate-grunt",
+  "version": "0.1.1",
   "author": "Marcus Lilja",
   "private": true,
 
@@ -15,6 +15,8 @@
     "grunt-contrib-cssmin":     "*",
     "grunt-contrib-uglify":     "*",
     "grunt-contrib-watch":      "*",
+    "grunt-contrib-copy":       "*",
+    "grunt-contrib-imagemin":   "*",
     "console-browserify":       "*",
     "matchdep":                 "*"
   }

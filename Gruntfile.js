@@ -89,6 +89,36 @@ module.exports = function (grunt) {
       }
     },
 
+    copy: {
+      images: {
+        expand: true,
+        cwd: 'assets/images/',
+        src: [
+          '**'
+        ],
+        dest: 'public/images/',
+        filter: 'isFile'
+      }
+    },
+
+    imagemin: {
+      build: {
+        options: {
+          optimizationLevel: 3,
+          cache: false
+        },
+
+        files: [
+          {
+            expand: true,
+            cwd: 'public/images/',
+            src: ['**/*.{png,jpg,gif}'],
+            dest: 'public/images/'
+          }
+        ]
+      }
+    },
+
     watch: {
       sass: {
         options: {
@@ -101,6 +131,22 @@ module.exports = function (grunt) {
         ],
 
         tasks: ['sass']
+      },
+
+      images: {
+        options: {
+          spawn: false
+        },
+
+        files: [
+          'assets/images/**/*.{png,jpg,gif}',
+          'assets/images/*.{png,jpg,gif}'
+        ],
+
+        tasks: [
+          'copy:images',
+          'imagemin'
+        ]
       },
 
       jslint: {
@@ -141,5 +187,5 @@ module.exports = function (grunt) {
     }
   });
 
-  grunt.registerTask('default', ['sass', 'jslint', 'browserify', 'exorcise', 'uglify']);
+  grunt.registerTask('default', ['sass', 'copy:images', 'imagemin', 'jslint', 'browserify', 'exorcise', 'uglify']);
 };
