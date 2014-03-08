@@ -16,9 +16,7 @@ Thumbs.db
 .cache
 .project
 .settings
-.tmproj
 *.esproj
-nbproject
 
 # Do not save lock file
 Gemfile.lock
