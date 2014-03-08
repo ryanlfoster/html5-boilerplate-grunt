@@ -4,7 +4,7 @@
   "author": "Marcus Lilja",
   "private": true,
 
-  "devDependencies": {
+  "dependencies": {
     "grunt":                    "*",
     "grunt-notify":             "*",
     "grunt-jslint":             "*",
@@ -19,5 +19,9 @@
     "grunt-contrib-imagemin":   "*",
     "console-browserify":       "*",
     "matchdep":                 "*"
+  },
+
+  "scripts": {
+    "postinstall": "bower install && bundle install"
   }
 }
