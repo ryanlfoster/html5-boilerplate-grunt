@@ -9,13 +9,25 @@ module.exports = function (grunt) {
     sass: {
       build: {
         options: {
-          style: 'compressed',
+          style: 'expanded',
           quiet: true,
           sourcemap: true
         },
 
         files: {
-          'public/stylesheets/main.min.css': 'assets/stylesheets/main.scss'
+          'public/stylesheets/main.css': 'assets/stylesheets/main.scss'
+        }
+      }
+    },
+
+    cssmin: {
+      build: {
+        options: {
+          keepSpecialComments: 0
+        },
+
+        files: {
+          'public/stylesheets/main.min.css': 'public/stylesheets/main.css'
         }
       }
     },
@@ -139,7 +151,7 @@ module.exports = function (grunt) {
           'assets/stylesheets/*.scss'
         ],
 
-        tasks: ['sass']
+        tasks: ['sass', 'cssmin']
       },
 
       images: {
@@ -212,7 +224,7 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask('default', [
-    'sass', 'copy:images', 'imagemin', 'copy:fonts',
+    'sass', 'cssmin', 'copy:images', 'imagemin', 'copy:fonts',
     'jslint', 'browserify', 'exorcise', 'uglify'
   ]);
 };
