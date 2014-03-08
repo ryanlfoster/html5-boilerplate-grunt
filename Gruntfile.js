@@ -83,18 +83,13 @@ module.exports = function (grunt) {
     exorcise: {
       build: {
         files: {
-          'public/javascripts/main.map': ['public/javascripts/main.js']
+          'public/javascripts/main.js.map': ['public/javascripts/main.js']
         }
       }
     },
 
     uglify: {
       build: {
-        options: {
-          sourceMap: true,
-          sourceMapIn: 'public/javascripts/main.map'
-        },
-
         files: {
           'public/javascripts/main.min.js': ['public/javascripts/main.js']
         }
