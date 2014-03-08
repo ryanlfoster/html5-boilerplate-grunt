@@ -22,6 +22,6 @@
   },
 
   "scripts": {
-    "postinstall": "bower install && bundle install"
+    "postinstall": "bower install && bundle install && bourbon install"
   }
 }
