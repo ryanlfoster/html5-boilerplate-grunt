@@ -1,4 +1,4 @@
-## Standard HTML5 boilerplate with sass, bourbon, grunt, jslint and browserify
+## HTML5 boilerplate with SASS, Bourbon, Grunt, JSLint and Browserify
 Certain requirements needs to be fulfilled in order to run and compile the project.
 
 ### Ruby dependencies
