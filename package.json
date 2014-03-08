@@ -4,7 +4,7 @@
   "author": "Marcus Lilja",
   "private": true,
 
-  "dependencies": {
+  "devDependencies": {
     "grunt":                    "*",
     "grunt-notify":             "*",
     "grunt-jslint":             "*",
