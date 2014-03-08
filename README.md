@@ -13,10 +13,7 @@ Certain requirements needs to be fulfilled in order to run and compile the proje
   * Bower - ([http://bower.io/](http://bower.io/))
 
 ### Installation
-1. `bundle install`
-2. `npm install`
-3. `bower install`
-4. `bourbon install`
+Run `npm install` to install all dependencies.
 
 ### Compile project
 Compile project with `grunt` or watch for changes with `grunt watch`.
