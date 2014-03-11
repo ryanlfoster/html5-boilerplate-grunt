@@ -7,24 +7,45 @@ module.exports = function (grunt) {
     pkg: grunt.file.readJSON('package.json'),
 
     php: {
-      server: {
+      standalone: {
         options: {
           keepalive: true,
           hostname: '0.0.0.0',
           port: grunt.option('port') || 8000,
-          base: grunt.option('base') || '.'
+          base: grunt.option('root') || '.'
+        }
+      },
+
+      laravel: {
+        options: {
+          keepalive: true,
+          hostname: '0.0.0.0',
+          port: grunt.option('port') || 8000,
+          base: 'public',
+          router: '../server.php'
         }
       }
     },
 
     concurrent: {
-      target: {
+      standalone: {
         options: {
           logConcurrentOutput: true
         },
 
         tasks: [
-          'php:server',
+          'php:standalone',
+          'watch'
+        ]
+      },
+
+      laravel: {
+        options: {
+          logConcurrentOutput: true
+        },
+
+        tasks: [
+          'php:laravel',
           'watch'
         ]
       }
@@ -247,5 +268,6 @@ module.exports = function (grunt) {
     'jslint', 'browserify', 'exorcise', 'uglify'
   ]);
 
-  grunt.registerTask('server', ['concurrent']);
+  grunt.registerTask('server', ['concurrent:standalone']);
+  grunt.registerTask('serve', ['concurrent:laravel']);
 };
