@@ -6,6 +6,30 @@ module.exports = function (grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
+    php: {
+      server: {
+        options: {
+          keepalive: true,
+          hostname: '0.0.0.0',
+          port: grunt.option('port') || 8000,
+          base: grunt.option('base') || '.'
+        }
+      }
+    },
+
+    concurrent: {
+      target: {
+        options: {
+          logConcurrentOutput: true
+        },
+
+        tasks: [
+          'php:server',
+          'watch'
+        ]
+      }
+    },
+
     sass: {
       build: {
         options: {
@@ -222,4 +246,6 @@ module.exports = function (grunt) {
     'sass', 'cssmin', 'copy:images', 'imagemin', 'copy:fonts',
     'jslint', 'browserify', 'exorcise', 'uglify'
   ]);
+
+  grunt.registerTask('server', ['concurrent']);
 };
