@@ -1,4 +1,4 @@
-## HTML5 boilerplate with SASS, Bourbon, Grunt, JSLint, Browserify and PHP
+## HTML5 boilerplate with SASS, Bourbon, Grunt, JSLint, Browserify, Autoprefixer and PHP
 Certain requirements needs to be fulfilled in order to run and compile the project.
 
 ### Ruby dependencies
