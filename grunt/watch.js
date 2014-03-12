@@ -13,7 +13,19 @@ module.exports = function () {
         'assets/stylesheets/*.scss'
       ],
 
-      tasks: ['sass', 'cssmin']
+      tasks: ['sass']
+    },
+
+    cssmin: {
+      options: {
+        spawn: false
+      },
+
+      files: [
+        'public/stylesheets/main.scss'
+      ],
+
+      tasks: ['cssmin']
     },
 
     images: {
@@ -73,6 +85,18 @@ module.exports = function () {
       ],
 
       tasks: ['browserify', 'exorcise']
+    },
+
+    exorcise: {
+      options: {
+        spawn: false
+      },
+
+      files: [
+        'public/javascripts/main.js'
+      ],
+
+      tasks: ['exorcise']
     },
 
     uglify: {
