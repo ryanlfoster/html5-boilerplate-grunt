@@ -8,18 +8,19 @@
 
   "devDependencies": {
     "grunt":                    "*",
-    "grunt-php":                "*",
     "grunt-notify":             "*",
     "grunt-jslint":             "*",
+    "grunt-php":                "*",
+    "grunt-concurrent":         "*",
     "grunt-browserify":         "*",
     "grunt-exorcise":           "*",
-    "grunt-concurrent":         "*",
-    "grunt-contrib-sass":       "*",
+    "grunt-contrib-imagemin":   "*",
     "grunt-contrib-cssmin":     "*",
     "grunt-contrib-uglify":     "*",
     "grunt-contrib-watch":      "*",
+    "grunt-contrib-clean":      "*",
     "grunt-contrib-copy":       "*",
-    "grunt-contrib-imagemin":   "*",
+    "grunt-contrib-sass":       "*",
     "load-grunt-config":        "*",
     "load-grunt-tasks":         "*",
     "console-browserify":       "*"
