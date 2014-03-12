@@ -20,8 +20,9 @@
     "grunt-contrib-watch":      "*",
     "grunt-contrib-copy":       "*",
     "grunt-contrib-imagemin":   "*",
-    "console-browserify":       "*",
-    "matchdep":                 "*"
+    "load-grunt-config":        "*",
+    "load-grunt-tasks":         "*",
+    "console-browserify":       "*"
   },
 
   "scripts": {
