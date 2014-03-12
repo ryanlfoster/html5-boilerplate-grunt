@@ -23,7 +23,8 @@
     "grunt-contrib-sass":       "*",
     "load-grunt-config":        "*",
     "load-grunt-tasks":         "*",
-    "console-browserify":       "*"
+    "console-browserify":       "*",
+    "time-grunt":               "*"
   },
 
   "scripts": {

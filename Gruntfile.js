@@ -2,6 +2,9 @@
 module.exports = function (grunt) {
   'use strict';
 
+  // Measures the time each task takes
+  require('time-grunt')(grunt);
+
   // Load Grunt config
   require('load-grunt-config')(grunt);
 
