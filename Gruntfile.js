@@ -9,9 +9,10 @@ module.exports = function (grunt) {
   require('load-grunt-config')(grunt);
 
   // Default task
-  grunt.registerTask('default', ['sass', 'copy', 'javascripts', 'minification']);
+  grunt.registerTask('default', ['build']);
 
   // Shorthands
+  grunt.registerTask('build', ['sass', 'copy', 'javascripts', 'minification']);
   grunt.registerTask('javascripts', ['jslint', 'browserify', 'exorcise']);
   grunt.registerTask('minify', ['cssmin', 'imagemin', 'uglify']);
 
