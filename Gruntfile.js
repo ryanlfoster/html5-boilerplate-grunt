@@ -13,7 +13,7 @@ module.exports = function (grunt) {
 
   // Shorthands
   grunt.registerTask('javascripts', ['jslint', 'browserify', 'exorcise']);
-  grunt.registerTask('minification', ['cssmin', 'imagemin', 'uglify']);
+  grunt.registerTask('minify', ['cssmin', 'imagemin', 'uglify']);
 
   // Server tasks
   grunt.registerTask('server', ['concurrent:standalone']);
