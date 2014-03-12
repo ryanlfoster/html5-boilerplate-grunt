@@ -5,12 +5,14 @@ module.exports = function (grunt) {
   // Load Grunt config
   require('load-grunt-config')(grunt);
 
-  // Register default task
-  grunt.registerTask('default', [
-    'stylesheets', 'copy:images', 'imagemin', 'copy:fonts',
-    'jslint', 'browserify', 'exorcise', 'uglify'
-  ]);
+  // Default task
+  grunt.registerTask('default', ['sass', 'copy', 'javascripts', 'minification']);
 
+  // Shorthands
+  grunt.registerTask('javascripts', ['jslint', 'browserify', 'exorcise']);
+  grunt.registerTask('minification', ['cssmin', 'imagemin', 'uglify']);
+
+  // Server tasks
   grunt.registerTask('server', ['concurrent:standalone']);
   grunt.registerTask('serve', ['concurrent:laravel']);
 };
