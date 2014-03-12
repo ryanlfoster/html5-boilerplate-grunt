@@ -8,12 +8,13 @@
 
   "devDependencies": {
     "grunt":                    "*",
-    "grunt-notify":             "*",
-    "grunt-jslint":             "*",
-    "grunt-php":                "*",
+    "grunt-autoprefixer":       "*",
     "grunt-concurrent":         "*",
     "grunt-browserify":         "*",
     "grunt-exorcise":           "*",
+    "grunt-notify":             "*",
+    "grunt-jslint":             "*",
+    "grunt-php":                "*",
     "grunt-contrib-imagemin":   "*",
     "grunt-contrib-cssmin":     "*",
     "grunt-contrib-uglify":     "*",

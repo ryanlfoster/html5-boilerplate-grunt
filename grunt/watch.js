@@ -13,7 +13,7 @@ module.exports = function () {
         'assets/stylesheets/*.scss'
       ],
 
-      tasks: ['sass']
+      tasks: ['sass', 'autoprefixer']
     },
 
     cssmin: {
