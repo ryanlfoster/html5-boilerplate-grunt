@@ -84,7 +84,7 @@ module.exports = function () {
         'assets/javascripts/*.js'
       ],
 
-      tasks: ['browserify', 'exorcise']
+      tasks: ['browserify']
     },
 
     exorcise: {
