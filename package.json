@@ -10,7 +10,7 @@
     "grunt":                    "*",
     "grunt-autoprefixer":       "*",
     "grunt-concurrent":         "*",
-    "grunt-browserify":         "*",
+    "grunt-browserify":         "1.3.*",
     "grunt-exorcise":           "*",
     "grunt-notify":             "*",
     "grunt-jslint":             "*",
