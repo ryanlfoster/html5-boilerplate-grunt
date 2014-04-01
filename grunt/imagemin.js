@@ -5,14 +5,15 @@ module.exports = function () {
   return {
     build: {
       options: {
-        optimizationLevel: 3
+        optimizationLevel: 3,
+        cache: false
       },
 
       files: [
         {
           expand: true,
-          cwd: 'public/images/',
-          src: ['**/*.{png,jpg,gif}'],
+          cwd: '.build/images/',
+          src: ['*.{png,jpg,gif}', '**/*.{png,jpg,gif}'],
           dest: 'public/images/'
         }
       ]

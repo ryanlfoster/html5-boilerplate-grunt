@@ -9,7 +9,7 @@ module.exports = function () {
       src: [
         '**'
       ],
-      dest: 'public/images/',
+      dest: '.build/images/',
       filter: 'isFile'
     },
 

@@ -40,7 +40,8 @@ module.exports = function () {
 
       tasks: [
         'copy:images',
-        'imagemin'
+        'imagemin',
+        'clean:build'
       ]
     },
 

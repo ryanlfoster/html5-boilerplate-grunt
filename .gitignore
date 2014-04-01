@@ -31,3 +31,6 @@ public/stylesheets/*
 public/javascripts/*
 public/images/*
 public/fonts/*
+
+# Temp build folders
+.build

@@ -3,11 +3,15 @@ module.exports = function () {
   'use strict';
 
   return {
-    clean: [
+    compiled: [
       'public/stylesheets',
       'public/javascripts',
       'public/images',
       'public/fonts'
+    ],
+
+    build: [
+      '.build'
     ]
   };
 };
