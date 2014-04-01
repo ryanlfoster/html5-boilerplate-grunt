@@ -33,4 +33,4 @@ public/images/*
 public/fonts/*
 
 # Temp build folders
-.build
+build
