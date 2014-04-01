@@ -12,7 +12,7 @@ module.exports = function () {
       files: [
         {
           expand: true,
-          cwd: '.build/images/',
+          cwd: 'build/images/',
           src: ['*.{png,jpg,gif}', '**/*.{png,jpg,gif}'],
           dest: 'public/images/'
         }

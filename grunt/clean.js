@@ -11,7 +11,7 @@ module.exports = function () {
     ],
 
     build: [
-      '.build'
+      'build'
     ]
   };
 };
