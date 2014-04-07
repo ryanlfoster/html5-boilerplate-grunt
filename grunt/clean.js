@@ -8,10 +8,6 @@ module.exports = function () {
       'public/javascripts',
       'public/images',
       'public/fonts'
-    ],
-
-    build: [
-      'build'
     ]
   };
 };
