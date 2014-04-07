@@ -1,10 +1,9 @@
-## HTML5 boilerplate with SASS, Bourbon, Grunt, JSLint, Browserify, Autoprefixer and PHP
+## HTML5 boilerplate with SASS, Grunt, JSLint, Browserify, Autoprefixer and PHP
 Certain requirements needs to be fulfilled in order to run and compile the project.
 
 ### Ruby dependencies
   * RVM - ([https://rvm.io/](https://rvm.io/))
   * Sass - ([http://sass-lang.com/](http://sass-lang.com/))
-  * Bourbon ([http://bourbon.io/](http://bourbon.io/))
 
 ### NPM dependencies
   * Node - ([http://nodejs.org/](http://nodejs.org/))
