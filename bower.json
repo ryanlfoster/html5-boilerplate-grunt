@@ -14,7 +14,6 @@
     "**/.*",
     "node_modules",
     "bower_components",
-    "bourbon",
     "test",
     "tests"
   ]
