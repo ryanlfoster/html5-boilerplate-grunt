@@ -6,7 +6,8 @@
   "author": "Marcus Lilja <marcus.lilja@gmail.com>",
   "private": true,
   "devDependencies": {
-    "jquery": "~1.11"
+    "jquery": "~1.11",
+    "modernizr": "~2.7.2"
   },
   "ignore": [
     "**/.*",
