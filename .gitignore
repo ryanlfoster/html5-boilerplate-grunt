@@ -14,9 +14,6 @@
 .DS_Store
 Thumbs.db
 
-# Do not save lock file
-Gemfile.lock
-
 # Libraries
 node_modules
 bower_components
