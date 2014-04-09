@@ -7,7 +7,8 @@ module.exports = function () {
       options: {
         style: 'expanded',
         quiet: true,
-        sourcemap: true
+        sourcemap: true,
+        loadPath: 'bower_components'
       },
 
       files: {
