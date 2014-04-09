@@ -24,7 +24,7 @@
     "grunt-contrib-sass": "^0.7.3",
     "load-grunt-config": "^0.7.2",
     "load-grunt-tasks": "^0.4.0",
-    "console-browserify": "^1.0.3",
+    "console-browserify": "^1.1.0",
     "time-grunt": "^0.3.1"
   },
   "scripts": {
