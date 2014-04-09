@@ -1,7 +1,11 @@
 
-// Normalize
-@import "vendor/normalize";
+// Libraries
+@import "libraries/variables";
+@import "libraries/fonts";
 
-// Imports
-@import "fonts";
-@import "base";
+// Normalize
+@import "normalize-scss/normalize";
+
+// Sections
+@import "sections/globals";
+@import "sections/containers";
