@@ -5,7 +5,10 @@ module.exports = function () {
   return {
     build: {
       options: {
-        optimizationLevel: 3,
+        optimizationLevel: 1,
+        progressive: true,
+        interlaced: true,
+        pngquant: true,
         cache: false
       },
 
