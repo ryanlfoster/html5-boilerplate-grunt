@@ -1,6 +1,6 @@
 {
   "name": "html5-boilerplate-grunt",
-  "version": "0.1.7",
+  "version": "0.2.0",
   "homepage": "https://github.com/marcuslilja/html5-boilerplate-grunt",
   "license": "MIT",
   "author": "Marcus Lilja <marcus.lilja@gmail.com>",
@@ -8,7 +8,7 @@
   "devDependencies": {
     "jquery": "~1.11",
     "modernizr": "~2.7.2",
-    "normalize-scss": "~3.0.1"
+    "normalize.styl": "~3.0.0"
   },
   "ignore": [
     "**/.*",
