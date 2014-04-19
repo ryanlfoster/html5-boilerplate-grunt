@@ -28,6 +28,6 @@
     "time-grunt": "^0.3.1"
   },
   "scripts": {
-    "postinstall": "bower install && bundle install && grunt modernizr"
+    "postinstall": "bower install && grunt modernizr"
   }
 }
