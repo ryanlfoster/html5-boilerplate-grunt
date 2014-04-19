@@ -12,7 +12,7 @@ module.exports = function (grunt) {
   grunt.registerTask('default', ['build']);
 
   // Shorthands
-  grunt.registerTask('build', ['sass', 'autoprefixer', 'copy:fonts', 'javascripts', 'minify']);
+  grunt.registerTask('build', ['stylus', 'autoprefixer', 'copy:fonts', 'javascripts', 'minify']);
   grunt.registerTask('javascripts', ['jslint', 'browserify', 'exorcise', 'modernizr']);
   grunt.registerTask('minify', ['cssmin', 'svgmin', 'imagemin', 'uglify']);
 

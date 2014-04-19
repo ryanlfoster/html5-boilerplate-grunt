@@ -3,17 +3,17 @@ module.exports = function () {
   'use strict';
 
   return {
-    sass: {
+    stylus: {
       options: {
         spawn: false
       },
 
       files: [
-        'assets/stylesheets/**/*.scss',
-        'assets/stylesheets/*.scss'
+        'assets/stylesheets/**/*.styl',
+        'assets/stylesheets/*.styl'
       ],
 
-      tasks: ['sass', 'autoprefixer']
+      tasks: ['stylus', 'autoprefixer']
     },
 
     cssmin: {
