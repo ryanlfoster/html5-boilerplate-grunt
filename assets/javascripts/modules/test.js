@@ -1,7 +1,6 @@
+
 (function () {
   'use strict';
-
-  var console = require('console-browserify');
 
   function Test() {
     this.message = 'Some message.';
