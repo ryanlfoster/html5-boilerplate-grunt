@@ -11,6 +11,16 @@ module.exports = function () {
       ],
       dest: 'public/fonts/',
       filter: 'isFile'
+    },
+
+    images: {
+      expand: true,
+      cwd: 'assets/images/',
+      src: [
+        '**'
+      ],
+      dest: 'public/images/',
+      filter: 'isFile'
     }
   };
 };

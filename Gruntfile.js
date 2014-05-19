@@ -12,9 +12,9 @@ module.exports = function (grunt) {
   grunt.registerTask('default', ['build']);
 
   // Shorthands
-  grunt.registerTask('build', ['stylus', 'autoprefixer', 'copy:fonts', 'javascripts', 'minify']);
+  grunt.registerTask('build', ['stylus', 'autoprefixer', 'copy:fonts', 'copy:images', 'javascripts', 'minify']);
   grunt.registerTask('javascripts', ['jslint', 'browserify', 'exorcise', 'modernizr']);
-  grunt.registerTask('minify', ['cssmin', 'svgmin', 'imagemin', 'uglify']);
+  grunt.registerTask('minify', ['cssmin', 'uglify']);
 
   // Server tasks
   grunt.registerTask('server', ['concurrent:standalone']);

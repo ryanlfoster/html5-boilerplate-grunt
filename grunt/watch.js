@@ -28,33 +28,18 @@ module.exports = function () {
       tasks: ['cssmin']
     },
 
-    svg: {
-      options: {
-        spawn: false
-      },
-
-      files: [
-        'assets/images/**/*.svg',
-        'assets/images/*.svg'
-      ],
-
-      tasks: [
-        'svgmin'
-      ]
-    },
-
     images: {
       options: {
         spawn: false
       },
 
       files: [
-        'assets/images/**/*.{png,jpg,gif}',
-        'assets/images/*.{png,jpg,gif}'
+        'assets/images/**/*.{png,jpg,gif,svg}',
+        'assets/images/*.{png,jpg,gif,svg}'
       ],
 
       tasks: [
-        'imagemin'
+        'copy:images'
       ]
     },
 
