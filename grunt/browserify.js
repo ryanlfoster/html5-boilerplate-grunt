@@ -4,20 +4,17 @@ module.exports = function () {
 
   return {
     build: {
-      src: 'assets/javascripts/main.js',
-      dest: 'public/javascripts/main.js',
+      files: {
+        'public/javascripts/main.js': ['assets/javascripts/main.js']
+      },
 
       options: {
-        debug: true,
+        bundleOptions: {
+          debug: true
+        },
+
         alias: [
           'bower_components/jquery/dist/jquery.js:jquery'
-        ],
-        aliasMappings: [
-          {
-            cwd: 'assets/javascripts/modules',
-            src: ['*.js', '**/*.js'],
-            dest: 'modules'
-          }
         ]
       }
     }
