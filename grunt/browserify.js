@@ -4,10 +4,6 @@ module.exports = function () {
 
   return {
     build: {
-      files: {
-        'public/javascripts/main.js': ['assets/javascripts/main.js']
-      },
-
       options: {
         bundleOptions: {
           debug: true
@@ -16,6 +12,10 @@ module.exports = function () {
         alias: [
           'bower_components/jquery/dist/jquery.js:jquery'
         ]
+      },
+
+      files: {
+        'public/javascripts/main.js': ['assets/javascripts/main.js']
       }
     }
   };
