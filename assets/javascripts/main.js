@@ -2,14 +2,14 @@
 'use strict';
 
 var $ = require('jquery'),
-  test = require('./modules/test.js');
+  message = require('./modules/message.js');
 
 // Define jQuery globals for plugin handling
 window.$ = $;
 window.jQuery = $;
 
 $(function () {
-  test.init();
+  message.print('Some message');
 
   $('.container').append($('<p>jQuery loaded!</p>'));
 });
