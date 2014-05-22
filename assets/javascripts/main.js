@@ -2,8 +2,7 @@
 'use strict';
 
 var $ = require('jquery'),
-  Test = require('./modules/test.js'),
-  test = new Test();
+  test = require('./modules/test.js');
 
 // Define jQuery globals for plugin handling
 window.$ = $;
