@@ -21,6 +21,7 @@ module.exports = function () {
       },
 
       directives: {
+        devel: true,
         node: true,
         todo: true,
         browser: true,
