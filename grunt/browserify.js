@@ -11,11 +11,18 @@ module.exports = function () {
 
         alias: [
           'bower_components/jquery/dist/jquery.js:jquery'
+        ],
+
+        transform: [
+          'coffeeify'
         ]
       },
 
       files: {
-        'public/javascripts/main.js': ['assets/javascripts/main.js']
+        'public/javascripts/main.js': [
+          'assets/javascripts/**/*.js',
+          'assets/javascripts/**/*.coffee'
+        ]
       }
     }
   };
