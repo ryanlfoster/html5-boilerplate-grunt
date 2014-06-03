@@ -6,7 +6,7 @@
   "author": "Marcus Lilja <marcus.lilja@gmail.com>",
   "private": true,
   "devDependencies": {
-    "browserify": "^4.1.5",
+    "browserify": "^4.1.8",
     "coffeeify": "^0.6.0",
     "grunt": "^0.4.5",
     "grunt-autoprefixer": "^0.7.3",
