@@ -8,7 +8,7 @@
   "devDependencies": {
     "jquery": "~1.11",
     "modernizr": "~2.8.2",
-    "normalize.styl": "~3.0.0"
+    "normalize-css": "~3.0.1"
   },
   "ignore": [
     "**/.*",
