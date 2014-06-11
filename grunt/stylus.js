@@ -6,7 +6,8 @@ module.exports = function () {
     build: {
       options: {
         compress: false,
-        paths: ['bower_components']
+        paths: ['bower_components'],
+        "include css": true
       },
 
       files: {
