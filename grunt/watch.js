@@ -22,7 +22,7 @@ module.exports = function () {
       },
 
       files: [
-        'public/stylesheets/main.scss'
+        'public/stylesheets/main.css'
       ],
 
       tasks: ['cssmin']
