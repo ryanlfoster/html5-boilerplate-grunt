@@ -3,7 +3,7 @@
 
 module.exports = function () {
   return {
-    stylus: {
+    stylesheets: {
       options: {
         spawn: false
       },
@@ -13,19 +13,7 @@ module.exports = function () {
         'assets/stylesheets/*.styl'
       ],
 
-      tasks: ['stylus', 'autoprefixer']
-    },
-
-    cssmin: {
-      options: {
-        spawn: false
-      },
-
-      files: [
-        'public/stylesheets/main.css'
-      ],
-
-      tasks: ['cssmin']
+      tasks: ['stylus', 'autoprefixer', 'cssmin']
     },
 
     images: {
