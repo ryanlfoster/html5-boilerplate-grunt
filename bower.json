@@ -7,7 +7,7 @@
   "private": true,
   "devDependencies": {
     "jquery": "~1.11",
-    "modernizr": "~2.8.2",
+    "modernizr": "~2.8.3",
     "normalize-css": "~3.0.1"
   },
   "ignore": [
