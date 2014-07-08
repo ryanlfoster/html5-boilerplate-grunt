@@ -4,10 +4,10 @@
 module.exports = function () {
   return {
     compiled: [
-      'public/stylesheets',
-      'public/javascripts',
-      'public/images',
-      'public/fonts'
+      '<%= project.publicPath %>/stylesheets',
+      '<%= project.publicPath %>/javascripts',
+      '<%= project.publicPath %>/images',
+      '<%= project.publicPath %>/fonts'
     ]
   };
 };

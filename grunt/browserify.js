@@ -19,7 +19,7 @@ module.exports = function () {
       },
 
       files: {
-        'public/javascripts/main.js': [
+        '<%= project.publicPath %>/javascripts/main.js': [
           'assets/javascripts/**/*.js',
           'assets/javascripts/**/*.coffee'
         ]

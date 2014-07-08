@@ -9,7 +9,7 @@ module.exports = function () {
       },
 
       files: {
-        'public/stylesheets/main.min.css': 'public/stylesheets/main.css'
+        '<%= project.publicPath %>/stylesheets/main.min.css': '<%= project.publicPath %>/stylesheets/main.css'
       }
     }
   };

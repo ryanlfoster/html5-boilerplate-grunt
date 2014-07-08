@@ -80,7 +80,7 @@ module.exports = function () {
       },
 
       files: [
-        'public/javascripts/main.js'
+        '<%= project.publicPath %>/javascripts/main.js'
       ],
 
       tasks: ['exorcise']
@@ -91,7 +91,7 @@ module.exports = function () {
         spawn: false
       },
 
-      files: ['public/javascripts/main.js'],
+      files: ['<%= project.publicPath %>/javascripts/main.js'],
       tasks: ['uglify']
     }
   };

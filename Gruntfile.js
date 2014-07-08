@@ -6,7 +6,15 @@ module.exports = function (grunt) {
   require('time-grunt')(grunt);
 
   // Load Grunt config
-  require('load-grunt-config')(grunt);
+  require('load-grunt-config')(grunt, {
+    init: true,
+    data: {
+      project: {
+        assetPath: 'assets',
+        publicPath: 'public'
+      }
+    }
+  });
 
   // Default task
   grunt.registerTask('default', ['build']);

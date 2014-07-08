@@ -9,7 +9,7 @@ module.exports = function () {
       src: [
         '**'
       ],
-      dest: 'public/fonts/',
+      dest: '<%= project.publicPath %>/fonts/',
       filter: 'isFile'
     },
 
@@ -19,7 +19,7 @@ module.exports = function () {
       src: [
         '**'
       ],
-      dest: 'public/images/',
+      dest: '<%= project.publicPath %>/images/',
       filter: 'isFile'
     }
   };

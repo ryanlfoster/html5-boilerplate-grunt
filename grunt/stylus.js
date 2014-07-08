@@ -11,7 +11,7 @@ module.exports = function () {
       },
 
       files: {
-        'public/stylesheets/main.css': 'assets/stylesheets/main.styl'
+        '<%= project.publicPath %>/stylesheets/main.css': 'assets/stylesheets/main.styl'
       }
     }
   };

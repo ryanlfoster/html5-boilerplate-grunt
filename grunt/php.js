@@ -17,7 +17,7 @@ module.exports = function (grunt) {
         keepalive: true,
         hostname: '0.0.0.0',
         port: grunt.option('port') || 8000,
-        base: 'public',
+        base: '<%= project.publicPath %>',
         router: '../server.php'
       }
     }

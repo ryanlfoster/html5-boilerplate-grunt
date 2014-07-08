@@ -9,8 +9,8 @@ module.exports = function () {
     },
 
     single_file: {
-      src: 'public/stylesheets/main.css',
-      dest: 'public/stylesheets/main.css'
+      src: '<%= project.publicPath %>/stylesheets/main.css',
+      dest: '<%= project.publicPath %>/stylesheets/main.css'
     }
   };
 };

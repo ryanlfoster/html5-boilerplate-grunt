@@ -5,7 +5,7 @@ module.exports = function () {
   return {
     build: {
       files: {
-        'public/javascripts/main.min.js': ['public/javascripts/main.js']
+        '<%= project.publicPath %>/javascripts/main.min.js': ['<%= project.publicPath %>/javascripts/main.js']
       }
     }
   };
