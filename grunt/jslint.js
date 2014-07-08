@@ -17,7 +17,8 @@ module.exports = function () {
       ],
 
       options: {
-        errorsOnly: true
+        errorsOnly: true,
+        failOnError: false
       },
 
       directives: {
