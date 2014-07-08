@@ -22,7 +22,7 @@
     "grunt-jslint": "^1.1.12",
     "grunt-modernizr": "^0.5.2",
     "grunt-notify": "^0.3.0",
-    "grunt-php": "^0.3.3",
+    "grunt-php": "^0.4.0",
     "load-grunt-config": "^0.12.0",
     "load-grunt-tasks": "^0.6.0",
     "time-grunt": "^0.3.2"
