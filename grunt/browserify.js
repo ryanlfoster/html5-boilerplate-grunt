@@ -9,12 +9,9 @@ module.exports = function () {
           debug: true
         },
 
-        alias: [
-          'bower_components/jquery/dist/jquery.js:jquery'
-        ],
-
         transform: [
-          'coffeeify'
+          'coffeeify',
+          'debowerify'
         ]
       },
 
