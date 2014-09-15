@@ -7,8 +7,6 @@
   "private": true,
   "devDependencies": {
     "browserify": "^5.9.1",
-    "coffeeify": "^0.7.0",
-    "debowerify": "^0.8.1",
     "grunt": "^0.4.5",
     "grunt-autoprefixer": "^1.0.0",
     "grunt-browserify": "^2.1.4",

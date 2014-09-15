@@ -7,12 +7,7 @@ module.exports = function () {
       options: {
         bundleOptions: {
           debug: true
-        },
-
-        transform: [
-          'coffeeify',
-          'debowerify'
-        ]
+        }
       },
 
       files: {
