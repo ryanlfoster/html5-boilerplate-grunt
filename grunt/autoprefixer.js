@@ -4,7 +4,10 @@
 module.exports = function () {
   return {
     options: {
-      browsers: ['last 3 version', 'ie 9'],
+      browsers: [
+        'last 3 version',
+        'ie 9'
+      ],
       map: false
     },
 
