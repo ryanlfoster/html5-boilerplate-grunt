@@ -5,7 +5,7 @@ module.exports = function () {
   return {
     build: {
       options: {
-        bundleOptions: {
+        browserifyOptions: {
           debug: true
         }
       },
