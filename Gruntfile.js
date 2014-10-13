@@ -19,16 +19,21 @@ module.exports = function (grunt) {
   // Default task
   grunt.registerTask('default', ['build']);
 
-  // Shorthands
+  // Complete build task
   grunt.registerTask('build', [
-    'stylus',
-    'autoprefixer',
-    'copy:fonts',
-    'copy:images',
+    'copy',
+    'stylesheets',
     'javascripts',
     'minify'
   ]);
 
+  // Stylesheet build tasks
+  grunt.registerTask('stylesheets', [
+    'stylus',
+    'autoprefixer'
+  ]);
+
+  // Javascript build tasks
   grunt.registerTask('javascripts', [
     'jslint',
     'browserify',
@@ -36,9 +41,16 @@ module.exports = function (grunt) {
     'modernizr'
   ]);
 
+  // Minify build tasks
   grunt.registerTask('minify', [
     'cssmin',
     'uglify'
+  ]);
+
+  // Create custom watcher command
+  grunt.registerTask('watcher', [
+    'browserify',
+    'watch'
   ]);
 
   // Server tasks

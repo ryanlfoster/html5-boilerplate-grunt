@@ -61,19 +61,6 @@ module.exports = function () {
       tasks: ['jslint']
     },
 
-    browserify: {
-      options: {
-        spawn: false
-      },
-
-      files: [
-        'assets/javascripts/**/*.js',
-        'assets/javascripts/*.js'
-      ],
-
-      tasks: ['browserify']
-    },
-
     exorcise: {
       options: {
         spawn: false

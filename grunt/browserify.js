@@ -7,15 +7,17 @@ module.exports = function () {
       options: {
         browserifyOptions: {
           debug: true
-        }
+        },
+
+        watch: true
       },
 
-      files: {
-        '<%= project.publicPath %>/javascripts/main.js': [
-          'assets/javascripts/*.js',
-          'assets/javascripts/**/*.js'
-        ]
-      }
+      src: [
+        'assets/javascripts/*.js',
+        'assets/javascripts/**/*.js'
+      ],
+
+      dest: '<%= project.publicPath %>/javascripts/main.js'
     }
   };
 };

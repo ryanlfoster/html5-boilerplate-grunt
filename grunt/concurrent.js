@@ -10,7 +10,7 @@ module.exports = function () {
 
       tasks: [
         'php:standalone',
-        'watch'
+        'watcher'
       ]
     },
 
@@ -21,7 +21,7 @@ module.exports = function () {
 
       tasks: [
         'php:laravel',
-        'watch'
+        'watcher'
       ]
     }
   };
