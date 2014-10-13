@@ -11,4 +11,4 @@ Certain requirements needs to be fulfilled in order to run and compile the proje
 Run `npm install` to install all dependencies.
 
 ### Compile project
-Compile project with `grunt` or watch for changes with `grunt watch`.
+Compile project with `grunt` or watch for changes with `grunt watcher`.
