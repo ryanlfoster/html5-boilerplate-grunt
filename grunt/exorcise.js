@@ -4,11 +4,8 @@
 module.exports = function () {
   return {
     build: {
-      files: {
-        '<%= project.publicPath %>/javascripts/main.js.map': [
-          '<%= project.publicPath %>/javascripts/main.js'
-        ]
-      }
+      src: '<%= project.publicPath %>/javascripts/main.js',
+      dest: '<%= project.publicPath %>/javascripts/main.js.map'
     }
   };
 };

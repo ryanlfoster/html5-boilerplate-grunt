@@ -8,9 +8,8 @@ module.exports = function () {
         keepSpecialComments: 0
       },
 
-      files: {
-        '<%= project.publicPath %>/stylesheets/main.min.css': '<%= project.publicPath %>/stylesheets/main.css'
-      }
+      src: '<%= project.publicPath %>/stylesheets/main.css',
+      dest: '<%= project.publicPath %>/stylesheets/main.min.css'
     }
   };
 };

@@ -8,6 +8,7 @@ module.exports = function () {
         'last 3 version',
         'ie 9'
       ],
+
       map: false
     },
 

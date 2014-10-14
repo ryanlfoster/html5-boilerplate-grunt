@@ -12,9 +12,8 @@ module.exports = function () {
         "include css": true
       },
 
-      files: {
-        '<%= project.publicPath %>/stylesheets/main.css': 'assets/stylesheets/main.styl'
-      }
+      src: 'assets/stylesheets/main.styl',
+      dest: '<%= project.publicPath %>/stylesheets/main.css'
     }
   };
 };
