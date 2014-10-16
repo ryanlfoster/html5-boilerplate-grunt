@@ -6,7 +6,8 @@ module.exports = function () {
     build: {
       options: {
         browserifyOptions: {
-          debug: true
+          debug: true,
+          fullPaths: false
         },
 
         watch: true
