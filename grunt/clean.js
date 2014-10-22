@@ -6,8 +6,8 @@ module.exports = function () {
     compiled: [
       '<%= output.styles.directory %>',
       '<%= output.scripts.directory %>',
-      '<%= project.publicPath %>/images',
-      '<%= project.publicPath %>/fonts'
+      '<%= output.fonts.directory %>',
+      '<%= output.images.directory %>'
     ]
   };
 };
