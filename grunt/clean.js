@@ -4,8 +4,8 @@
 module.exports = function () {
   return {
     compiled: [
-      '<%= project.publicPath %>/stylesheets',
-      '<%= project.publicPath %>/javascripts',
+      '<%= output.styles.directory %>',
+      '<%= output.scripts.directory %>',
       '<%= project.publicPath %>/images',
       '<%= project.publicPath %>/fonts'
     ]

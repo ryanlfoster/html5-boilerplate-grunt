@@ -9,11 +9,14 @@ module.exports = function () {
       },
 
       files: [
-        'assets/stylesheets/**/*.styl',
-        'assets/stylesheets/*.styl'
+        '<%= assets.stylus.directory %>/**/*.styl',
+        '<%= assets.stylus.directory %>/*.styl'
       ],
 
-      tasks: ['stylus', 'autoprefixer', 'cssmin']
+      tasks: [
+        'stylus',
+        'autoprefixer'
+      ]
     },
 
     images: {
@@ -54,11 +57,13 @@ module.exports = function () {
       files: [
         'Gruntfile.js',
         'grunt/*.js',
-        'assets/javascripts/**/*.js',
-        'assets/javascripts/*.js'
+        '<%= assets.scripts.directory %>/**/*.js',
+        '<%= assets.scripts.directory %>/*.js'
       ],
 
-      tasks: ['jslint']
+      tasks: [
+        'jslint'
+      ]
     },
 
     exorcise: {
@@ -67,19 +72,12 @@ module.exports = function () {
       },
 
       files: [
-        '<%= project.publicPath %>/javascripts/main.js'
+        '<%= assets.scripts.directory %>/main.js'
       ],
 
-      tasks: ['exorcise']
-    },
-
-    uglify: {
-      options: {
-        spawn: false
-      },
-
-      files: ['<%= project.publicPath %>/javascripts/main.js'],
-      tasks: ['uglify']
+      tasks: [
+        'exorcise'
+      ]
     }
   };
 };

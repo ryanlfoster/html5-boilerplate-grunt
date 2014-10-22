@@ -13,12 +13,8 @@ module.exports = function () {
         watch: true
       },
 
-      src: [
-        'assets/javascripts/*.js',
-        'assets/javascripts/**/*.js'
-      ],
-
-      dest: '<%= project.publicPath %>/javascripts/main.js'
+      src: '<%= assets.scripts.directory %>/<%= assets.scripts.filename %>.js',
+      dest: '<%= output.scripts.directory %>/<%= output.scripts.filename %>.js'
     }
   };
 };

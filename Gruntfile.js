@@ -9,6 +9,30 @@ module.exports = function (grunt) {
   require('load-grunt-config')(grunt, {
     init: true,
     data: {
+      assets: {
+        stylus: {
+          directory: 'assets/stylesheets',
+          filename: 'main'
+        },
+
+        scripts: {
+          directory: 'assets/javascripts',
+          filename: 'main'
+        }
+      },
+
+      output: {
+        styles: {
+          directory: 'public/stylesheets',
+          filename: 'main'
+        },
+
+        scripts: {
+          directory: 'public/javascripts',
+          filename: 'main'
+        }
+      },
+
       project: {
         assetPath: 'assets',
         publicPath: 'public'

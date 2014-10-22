@@ -7,13 +7,13 @@ module.exports = function () {
       src: [
         'Gruntfile.js',
         'grunt/*.js',
-        'assets/javascripts/**/*.js',
-        'assets/javascripts/*.js'
+        '<%= assets.scripts.directory %>/**/*.js',
+        '<%= assets.scripts.directory %>/*.js'
       ],
 
       exclude: [
-        'assets/javascripts/vendor/**/*.js',
-        'assets/javascripts/vendor/*.js'
+        '<%= assets.scripts.directory %>/vendor/**/*.js',
+        '<%= assets.scripts.directory %>/vendor/*.js'
       ],
 
       options: {

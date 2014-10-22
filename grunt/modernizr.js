@@ -5,7 +5,7 @@ module.exports = function () {
   return {
     build: {
       'devFile': 'bower_components/modernizr/modernizr.js',
-      'outputFile': '<%= project.publicPath %>/javascripts/vendor/modernizr.min.js',
+      'outputFile': '<%= output.scripts.directory %>/vendor/modernizr.min.js',
       'uglify': true,
       'parseFiles': false,
       'matchCommunityTests': false,

@@ -4,8 +4,8 @@
 module.exports = function () {
   return {
     build: {
-      src: '<%= project.publicPath %>/javascripts/main.js',
-      dest: '<%= project.publicPath %>/javascripts/main.min.js'
+      src: '<%= output.scripts.directory %>/<%= output.scripts.filename %>.js',
+      dest: '<%= output.scripts.directory %>/<%= output.scripts.filename %>.min.js'
     }
   };
 };

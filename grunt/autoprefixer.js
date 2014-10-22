@@ -13,8 +13,8 @@ module.exports = function () {
     },
 
     single_file: {
-      src: '<%= project.publicPath %>/stylesheets/main.css',
-      dest: '<%= project.publicPath %>/stylesheets/main.css'
+      src: '<%= output.styles.directory %>/<%= output.styles.filename %>.css',
+      dest: '<%= output.styles.directory %>/<%= output.styles.filename %>.css'
     }
   };
 };
