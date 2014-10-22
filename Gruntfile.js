@@ -58,19 +58,19 @@ module.exports = function (grunt) {
   // Complete build task
   grunt.registerTask('build', [
     'copy',
-    'stylesheets',
-    'javascripts',
+    'styles',
+    'scripts',
     'minify'
   ]);
 
   // Stylesheet build tasks
-  grunt.registerTask('stylesheets', [
+  grunt.registerTask('styles', [
     'stylus',
     'autoprefixer'
   ]);
 
   // Javascript build tasks
-  grunt.registerTask('javascripts', [
+  grunt.registerTask('scripts', [
     'jslint',
     'browserify',
     'exorcise',
