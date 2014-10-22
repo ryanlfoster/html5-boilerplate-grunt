@@ -5,21 +5,21 @@ module.exports = function () {
   return {
     fonts: {
       expand: true,
-      cwd: 'assets/fonts/',
+      cwd: '<%= assets.fonts.directory %>',
       src: [
         '**'
       ],
-      dest: '<%= project.publicPath %>/fonts/',
+      dest: '<%= output.fonts.directory %>',
       filter: 'isFile'
     },
 
     images: {
       expand: true,
-      cwd: 'assets/images/',
+      cwd: '<%= assets.images.directory %>',
       src: [
         '**'
       ],
-      dest: '<%= project.publicPath %>/images/',
+      dest: '<%= output.images.directory %>',
       filter: 'isFile'
     }
   };

@@ -8,6 +8,7 @@ module.exports = function (grunt) {
   // Load Grunt config
   require('load-grunt-config')(grunt, {
     init: true,
+
     data: {
       assets: {
         stylus: {
@@ -18,6 +19,14 @@ module.exports = function (grunt) {
         scripts: {
           directory: 'assets/javascripts',
           filename: 'main'
+        },
+
+        fonts: {
+          directory: 'assets/fonts'
+        },
+
+        images: {
+          directory: 'assets/images'
         }
       },
 
@@ -30,12 +39,15 @@ module.exports = function (grunt) {
         scripts: {
           directory: 'public/javascripts',
           filename: 'main'
-        }
-      },
+        },
 
-      project: {
-        assetPath: 'assets',
-        publicPath: 'public'
+        fonts: {
+          directory: 'public/fonts'
+        },
+
+        images: {
+          directory: 'public/images'
+        }
       }
     }
   });

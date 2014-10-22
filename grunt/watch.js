@@ -25,8 +25,8 @@ module.exports = function () {
       },
 
       files: [
-        'assets/images/**/*.{png,jpg,gif,svg}',
-        'assets/images/*.{png,jpg,gif,svg}'
+        '<%= assets.images.directory %>/**/*',
+        '<%= assets.images.directory %>/*'
       ],
 
       tasks: [
@@ -40,8 +40,8 @@ module.exports = function () {
       },
 
       files: [
-        'assets/fonts/**/*',
-        'assets/fonts/*'
+        '<%= assets.fonts.directory %>/**/*',
+        '<%= assets.fonts.directory %>/*'
       ],
 
       tasks: [
