@@ -12,12 +12,12 @@ module.exports = function (grunt) {
     data: {
       assets: {
         stylus: {
-          directory: 'assets/stylesheets',
+          directory: 'assets/stylus',
           filename: 'main'
         },
 
         scripts: {
-          directory: 'assets/javascripts',
+          directory: 'assets/scripts',
           filename: 'main'
         },
 
