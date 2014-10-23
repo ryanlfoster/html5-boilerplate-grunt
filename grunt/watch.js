@@ -14,8 +14,7 @@ module.exports = function () {
       ],
 
       tasks: [
-        'stylus',
-        'autoprefixer'
+        'styles'
       ]
     },
 
