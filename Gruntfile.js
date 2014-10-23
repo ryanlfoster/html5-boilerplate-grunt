@@ -51,45 +51,4 @@ module.exports = function (grunt) {
       }
     }
   });
-
-  // Default task
-  grunt.registerTask('default', ['build']);
-
-  // Complete build task
-  grunt.registerTask('build', [
-    'copy',
-    'styles',
-    'scripts',
-    'minify'
-  ]);
-
-  // Stylesheet build tasks
-  grunt.registerTask('styles', [
-    'stylus',
-    'autoprefixer'
-  ]);
-
-  // Javascript build tasks
-  grunt.registerTask('scripts', [
-    'jslint',
-    'browserify',
-    'exorcise',
-    'modernizr'
-  ]);
-
-  // Minify build tasks
-  grunt.registerTask('minify', [
-    'cssmin',
-    'uglify'
-  ]);
-
-  // Create custom watcher command
-  grunt.registerTask('watcher', [
-    'browserify',
-    'watch'
-  ]);
-
-  // Server tasks
-  grunt.registerTask('server', ['concurrent:standalone']);
-  grunt.registerTask('serve', ['concurrent:laravel']);
 };
